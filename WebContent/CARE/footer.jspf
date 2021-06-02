@@ -1,0 +1,155 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!-- Footer Area Starts -->
+		<footer class="main-footer">
+		<!-- Nested Container Starts -->
+			<div class="container">
+			<!-- Starts -->
+				<div class="row">
+				<!-- Logo Starts -->
+					<div class="col-lg-3 col-sm-12 text-xs-center text-sm-center text-lg-left">
+						<img src="images/logo.png" alt="FoodBingo" class="img-fluid">
+					</div>
+				<!-- Logo Ends -->
+				<!-- Page Links Starts -->
+					<div class="col-lg-6 col-sm-12">
+						<ul class="list-unstyled list-inline page-links text-center">
+							<li class="list-inline-item"><a href="index.html">Home</a></li>
+							<li class="list-inline-item"><a href="about.html">About Us</a></li>
+							<li class="list-inline-item"><a href="#">Recipes</a></li>
+							<li class="list-inline-item"><a href="#">Foods</a></li>
+							<li class="list-inline-item"><a href="#">Catering</a></li>
+							<li class="list-inline-item"><a href="contact.html">Contact Us</a></li>
+						</ul>
+					</div>
+				<!-- Page Links Ends -->
+				<!-- Social Media Links Starts -->
+					<div class="col-lg-3 col-sm-12">
+						<ul class="list-unstyled list-inline sm-links text-xs-center text-sm-center text-lg-right">
+							<li class="list-inline-item">
+								<a href="#" class="btn btn-prime animation">
+									<i class="fa fa-twitter"></i>
+								</a>
+							</li>
+							<li class="list-inline-item">
+								<a href="#" class="btn btn-prime animation">
+									<i class="fa fa-facebook"></i>
+								</a>
+							</li>
+							<li class="list-inline-item">
+								<a href="#" class="btn btn-prime animation">
+									<i class="fa fa-linkedin"></i>
+								</a>
+							</li>
+							<li class="list-inline-item">
+								<a href="#" class="btn btn-prime animation">
+									<i class="fa fa-skype"></i>
+								</a>
+							</li>
+							<li class="list-inline-item">
+								<a href="#" class="btn btn-prime animation">
+									<i class="fa fa-pinterest"></i>
+								</a>
+							</li>
+						</ul>
+					</div>
+				<!-- Social Media Links Ends -->
+				</div>
+			<!-- Ends -->
+			<!-- Address Section Starts -->
+				<section class="foot-address text-xs-center text-sm-center text-md-left">
+					<h5 class="mt-4 mb-3">Address :</h5>
+				<!-- Nested Row Starts -->
+					<div class="row">
+						<ul class="list-unstyled col-md-4 col-sm-12">
+							<li>28 Jackson Blvd Ste 1020 Chicago</li>
+							<li>IL 60604-2340</li>
+						</ul>
+						<ul class="list-unstyled col-md-4 col-sm-12">
+							<li>Freephone: +1-800-559-1234</li>
+							<li>Telephone: +1-800-603-9874</li>
+						</ul>
+						<ul class="list-unstyled col-md-4 col-sm-12">
+							<li>FAX: +1-800-999-9898</li>
+							<li>E-mail: <a href="mailto:mail@foodbingodemo.com">mail@foodbingodemo.com</a></li>
+						</ul>
+					</div>
+				<!-- Nested Row Ends -->
+				</section>
+			<!-- Address Section Ends -->
+			<!-- Links Section Starts -->
+				<section class="footer-links-section text-xs-center text-sm-center text-md-left">
+				<!-- Nested Row Starts -->
+					<div class="row">
+					<!-- Link Col #1 Starts -->
+						<div class="col-lg-3 col-md-6 col-sm-12">
+							<h5>Restaurants By Area</h5>
+							<ul class="list-unstyled">
+								<li><a href="#">Restaurants in Madhapur</a></li>
+								<li><a href="#">Restaurants in Sainikpuri</a></li>
+								<li><a href="#">Restaurants in Banjara Hills</a></li>
+								<li><a href="#">Restaurants in Gachibowli</a></li>
+								<li><a href="#">Restaurants in Jubilee Hills</a></li>
+								<li><a href="#">Restaurants in Secunderabad</a></li>
+								<li><a href="#">Restaurants in Hitech City</a></li>
+							</ul>
+						</div>
+					<!-- Link Col #1 Ends -->
+					<!-- Link Col #2 Starts -->
+						<div class="col-lg-3 col-md-6 col-sm-12">
+							<h5>Top Rated Cuisines</h5>
+							<ul class="list-unstyled">
+								<li><a href="#">North Indian</a></li>
+								<li><a href="#">Italian</a></li>
+								<li><a href="#">Bengali</a></li>
+								<li><a href="#">Chinese</a></li>
+								<li><a href="#">Mughlai</a></li>
+								<li><a href="#">Continental</a></li>
+								<li><a href="#">Hyderabadi Biriyani</a></li>
+							</ul>
+						</div>
+					<!-- Link Col #2 Ends -->
+					<!-- Link Col #3 Starts -->
+						<div class="col-lg-3 col-md-6 col-sm-12">
+							<h5>Popular Restaurants</h5>
+							<ul class="list-unstyled">
+								<li><a href="#">Hinglish Cafe</a></li>
+								<li><a href="#">Mama Mia Italia</a></li>
+								<li><a href="#">Khaan Saab</a></li>
+								<li><a href="#">Call Of Benga</a></li>
+								<li><a href="#">China By Marcopolo</a></li>
+								<li><a href="#">Ulavacharu</a></li>
+								<li><a href="#">Reshmi's</a></li>
+							</ul>
+						</div>
+					<!-- Link Col #3 Ends -->
+					<!-- Link Col #4 Starts -->
+						<div class="col-lg-3 col-md-6 col-sm-12">
+							<h5>Popular Cities</h5>
+							<ul class="list-unstyled">
+								<li><a href="#">Pune</a></li>
+								<li><a href="#">Bangalore</a></li>
+								<li><a href="#">Hyderabad</a></li>
+								<li><a href="#">Chennai</a></li>
+								<li><a href="#">Delhi</a></li>
+								<li><a href="#">Mumbai</a></li>
+								<li><a href="#">Gurgaon</a></li>
+							</ul>
+						</div>
+					<!-- Link Col #4 Ends -->
+					</div>
+				<!-- Nested Row Ends -->
+				</section>
+			<!-- Links Section Ends -->
+			<!-- Copyright Starts -->
+				<p class="copyright text-center mb-0">
+					All Rights Reserved &copy; 2010 - 2018  Food Bingo  Service.
+				</p>
+			<!-- Copyright Ends -->
+			</div>
+		<!-- Nested Container Ends -->
+		</footer>
+		
+	
+	</body>
+</html>

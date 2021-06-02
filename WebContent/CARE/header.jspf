@@ -1,0 +1,74 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+    
+    <script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/plugins/bootstrap-filestyle/bootstrap-filestyle.min.js"></script>
+	<script src="js/plugins/datepicker/bootstrap-datepicker.js"></script>
+	<script src="js/plugins/owl-carousel/owl.carousel.js"></script>
+	<script src="js/plugins/magnific-popup/jquery.magnific-popup.min.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?v=3&amp;sensor=false"></script>
+	<script src="js/custom.js"></script>	
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta name="description" content="">
+		<meta name="author" content="">
+
+		<title>Food Bingo - Bootstrap Template</title>
+
+		<!-- Bootstrap -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+
+		<!-- Google Web Fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,700italic,900,900italic" rel="stylesheet" type="text/css">
+
+		<!-- Template CSS Files  -->
+		<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+		<link href="js/plugins/owl-carousel/owl.carousel.css" rel="stylesheet">
+		<link href="js/plugins/owl-carousel/owl.transitions.css" rel="stylesheet">
+		<link href="js/plugins/owl-carousel/owl.theme.css" rel="stylesheet">
+		<link href="js/plugins/magnific-popup/magnific-popup.css" rel="stylesheet">
+		<link href="js/plugins/datepicker/datepicker.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">
+		<link href="css/responsive.css" rel="stylesheet">
+
+	</head>
+	<body>
+	<!-- Header Starts -->
+		<header class="main-header">
+		<!-- Nested Container Starts -->
+			<div class="container text-xs-center text-sm-center text-lg-left">
+			<!-- Nested Row Starts -->
+				<div class="row">
+					<div class="col-md-4 col-sm-12">
+					<!-- Logo Starts -->
+						<img src="images/logo.png" alt="FoodBingo" class="logo img-fluid">
+					<!-- Logo Ends -->
+					</div>
+					<div class="col-md-8 col-sm-12">
+					<!-- Top Links Starts -->
+						<ul class="list-unstyled list-inline top-links text-md-right text-weight-bold">
+							<li class="list-inline-item"><a href="#">Help</a></li>
+							<li class="list-inline-item"><a href="#">Request Call Back</a></li>
+							<li class="list-inline-item"><a href="login.html">Register</a></li>
+							<li class="list-inline-item"><a href="login.html">Login</a></li>
+						</ul>
+					<!-- Top Links Ends -->
+					<!-- Starts -->
+						<ul class="list-unstyled list-inline text-md-right order-info">
+							<li class="list-inline-item lead"><i class="fa fa-phone"></i> Call : 001 9876 543 210</li>
+							<li class="list-inline-item d-xs-none d-sm-none d-md-inline">&nbsp;</li>
+							<li class="list-inline-item"><a href="#" class="btn btn-light animation">Order Food Online!</a></li>
+						</ul>
+					<!-- Ends -->
+					</div>
+				</div>
+			<!-- Nested Row Ends -->
+			</div>
+		<!-- Nested Container Ends -->
+		</header>
