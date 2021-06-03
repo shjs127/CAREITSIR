@@ -47,7 +47,9 @@
 				<div class="row">
 					<div class="col-md-4 col-sm-12">
 					<!-- Logo Starts -->
-						<img src="<%=request.getContextPath()%>/CARE/images/logo.png" alt="FoodBingo" class="logo img-fluid">
+					<a href="${pageContext.request.contextPath}/main/index.do">
+						<img src="<%=request.getContextPath()%>/CARE/images/careitsir_logo6.png" alt="FoodBingo" class="logo img-fluid" width="200" height="200">
+						</a>
 					<!-- Logo Ends -->
 					</div>
 					<div class="col-md-8 col-sm-12">
