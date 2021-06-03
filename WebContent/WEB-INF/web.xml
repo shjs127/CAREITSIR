@@ -14,7 +14,7 @@
 		<listener-class>jdbc.DBCPInitListener</listener-class>
 	</listener>
 
-	<context-param>
+<!--	<context-param>
 		<param-name>poolConfig</param-name>
 		<param-value>
 			jdbcdriver=oracle.jdbc.driver.OracleDriver
@@ -27,7 +27,20 @@
 			poolName=CARE
 		</param-value>
 	</context-param>
-	
+	-->
+	<context-param>
+		<param-name>poolConfig</param-name>
+		<param-value>
+			jdbcdriver=oracle.jdbc.driver.OracleDriver
+			jdbcUrl=jdbc:oracle:thin:@localhost:1521:xe
+			dbUser=USER10
+			dbPass=USER10
+			validationQuery=select 1
+			minIdle=3
+			maxTotal=30
+			poolName=USER10
+		</param-value>
+	</context-param>
 		<servlet>
 		<servlet-name>ControllerUsingURI</servlet-name>
 		<servlet-class>mvc.controller.ControllerUsingURI</servlet-class>

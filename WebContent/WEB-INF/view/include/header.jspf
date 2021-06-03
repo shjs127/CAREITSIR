@@ -56,8 +56,8 @@
 					<!-- Top Links Starts -->
 						<ul class="list-unstyled list-inline top-links text-md-right text-weight-bold">
 							<li class="list-inline-item"><a href="#">마이페이지</a></li>
-							<li class="list-inline-item"><a href="join.do">게시판</a></li>
-							<li class="list-inline-item"><a href="login.do">로그인</a></li>
+							<li class="list-inline-item"><a href="${pageContext.request.contextPath}/join.do">게시판</a></li>
+							<li class="list-inline-item"><a href="${pageContext.request.contextPath }/login.do">로그인</a></li>
 						</ul>
 
 

@@ -14,19 +14,19 @@
                         <h4 class="text-spl-color">기존 회원 로그인</h4>
                     <!-- Login Form Starts -->
                     <p class="login-box-msg">
-				<c:if test="${errors.idOrPwNotMatch}">
+<!--  		<c:if test="${errors.idOrPwNotMatch}">
 					아이디와 암호가 일치하지 않습니다.
-				</c:if>
+				</c:if>  -->
 				<c:if test="${errors.id}">ID를 입력하세요.</c:if>
 				<c:if test="${errors.password}">암호를 입력하세요.</c:if>
 			</p>
                         <form action="login.do">
                             <div class="form-group">
-                              <label class="sr-only" for="login-email">Email address</label>
+                           
                                 <input type="text" class="form-control" name="id" id="login-email" placeholder="ID">
                             </div>
                             <div class="form-group">
-                                <label class="sr-only" for="login-password">Password</label>
+               
                                 <input type="password" class="form-control" name="password" id="login-password" placeholder="Password">
                             </div>
                             <div class="checkbox">
