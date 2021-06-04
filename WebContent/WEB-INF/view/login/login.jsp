@@ -20,7 +20,11 @@
 				<c:if test="${errors.id}">ID를 입력하세요.</c:if>
 				<c:if test="${errors.password}">암호를 입력하세요.</c:if>
 			</p>
+
                         <form action="login.do" method="post">
+
+                        <form action="${pageContext.request.contextPath}/login.do" method="post">
+
                             <div class="form-group">
                            
                                 <input type="text" class="form-control" name="id" id="login-email" placeholder="ID">

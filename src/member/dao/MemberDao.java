@@ -34,6 +34,7 @@ public class MemberDao {
 						rs.getString("administer"));
 			}
 			return member;
+			
 		} finally {
 			JdbcUtil.close(rs);
 			JdbcUtil.close(pstmt);
@@ -48,7 +49,7 @@ public class MemberDao {
 
 			pstmt.setString(1, mem.getUserId());
 			pstmt.setString(2, mem.getPassword());
-			pstmt.setString(3, mem.getName());
+			pstmt.setString(3, mem.getUserName());
 			pstmt.setString(4, mem.getNickName());
 			//pstmt.setString(5, mem.getBirth());
 			pstmt.setString(5, mem.getEmail());
@@ -63,7 +64,7 @@ public class MemberDao {
 	public void update(Connection conn, Member member) throws SQLException {
 		try (PreparedStatement pstmt = conn.prepareStatement(
 				"update member set name = ?, password = ? where memberid = ?")) {
-			pstmt.setString(1, member.getName());
+			pstmt.setString(1, member.getUserName());
 			pstmt.setString(2, member.getPassword());
 			pstmt.setString(3, member.getUserId());
 			pstmt.executeUpdate();

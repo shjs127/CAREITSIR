@@ -6,19 +6,23 @@ public class Member {
 	private int userNo;
 	private String userId;  // "lee"
 	private String password;
-	private String name;
+	private String userName;
 	private String nickName;
 	private String birth;
 	private String email;
 	private String gender;
 	private String administer;
 
+<<<<<<< HEAD
 	public Member(int userNo, String userId, String password, String name, String nickName, String birth, String email,
+=======
+	public Member(int userNo, String userId, String password, String userName, String nickName, String birth, String email,
+>>>>>>> refs/remotes/origin/main
 			String gender, String administer) {
 		this.userNo = userNo;
 		this.userId = userId;
 		this.password = password;
-		this.name = name;
+		this.userName = userName;
 		this.nickName = nickName;
 		this.birth = birth;
 		this.email = email;
@@ -42,8 +46,8 @@ public class Member {
 		return administer;
 	}
 
-	public String getName() {
-		return name;
+	public String getUserName() {
+		return userName;
 	}
 
 	public String getPassword() {
