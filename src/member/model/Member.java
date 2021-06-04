@@ -6,24 +6,24 @@ public class Member {
 	private int userNo;
 	private String userId;  // "lee"
 	private String password;
-	private String name;
+	private String userName;
 	private String nickName;
 	private String birth;
 	private String email;
 	private String gender;
-	private String adminster;
+	private String administer;
 
-	public Member(int userNo, String userId, String password, String name, String nickName, String birth, String email,
-			String gender, String adminster) {
+	public Member(int userNo, String userId, String password, String userName, String nickName, String birth, String email,
+			String gender, String administer) {
 		this.userNo = userNo;
 		this.userId = userId;
 		this.password = password;
-		this.name = name;
+		this.userName = userName;
 		this.nickName = nickName;
 		this.birth = birth;
 		this.email = email;
 		this.gender = gender;
-		this.adminster = adminster;
+		this.administer = administer;
 	}
 	/*
 	 * public Member(int userNo, String userId, String password, String name ,String
@@ -38,12 +38,12 @@ public class Member {
 	public String getUserId() {
 		return userId;
 	}
-	public String getAdminster() {
-		return adminster;
+	public String getAdminister() {
+		return administer;
 	}
 
-	public String getName() {
-		return name;
+	public String getUserName() {
+		return userName;
 	}
 
 	public String getPassword() {

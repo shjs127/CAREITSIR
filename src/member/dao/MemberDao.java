@@ -25,15 +25,16 @@ public class MemberDao {
 				member = new Member(
 						rs.getInt("userNo"),
 						rs.getString("userId"), 
-						rs.getString("name"), 
 						rs.getString("password"),
+						rs.getString("userName"), 
 						rs.getString("nickName"), 
 						rs.getString("birth"),
 						rs.getString("email"),
 						rs.getString("gender"),
-						rs.getString("adminster"));
+						rs.getString("administer"));
 			}
 			return member;
+			
 		} finally {
 			JdbcUtil.close(rs);
 			JdbcUtil.close(pstmt);
@@ -48,12 +49,12 @@ public class MemberDao {
 
 			pstmt.setString(1, mem.getUserId());
 			pstmt.setString(2, mem.getPassword());
-			pstmt.setString(3, mem.getName());
+			pstmt.setString(3, mem.getUserName());
 			pstmt.setString(4, mem.getNickName());
 			//pstmt.setString(5, mem.getBirth());
 			pstmt.setString(5, mem.getEmail());
 			pstmt.setString(6, mem.getGender());
-			pstmt.setString(7, mem.getAdminster());
+			pstmt.setString(7, mem.getAdminister());
 	
 
 			pstmt.executeUpdate();
@@ -63,7 +64,7 @@ public class MemberDao {
 	public void update(Connection conn, Member member) throws SQLException {
 		try (PreparedStatement pstmt = conn.prepareStatement(
 				"update member set name = ?, password = ? where memberid = ?")) {
-			pstmt.setString(1, member.getName());
+			pstmt.setString(1, member.getUserName());
 			pstmt.setString(2, member.getPassword());
 			pstmt.setString(3, member.getUserId());
 			pstmt.executeUpdate();
