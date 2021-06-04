@@ -25,13 +25,13 @@ public class MemberDao {
 				member = new Member(
 						rs.getInt("userNo"),
 						rs.getString("userId"), 
-						rs.getString("name"), 
 						rs.getString("password"),
+						rs.getString("userName"), 
 						rs.getString("nickName"), 
 						rs.getString("birth"),
 						rs.getString("email"),
 						rs.getString("gender"),
-						rs.getString("adminster"));
+						rs.getString("administer"));
 			}
 			return member;
 		} finally {
@@ -53,7 +53,7 @@ public class MemberDao {
 			//pstmt.setString(5, mem.getBirth());
 			pstmt.setString(5, mem.getEmail());
 			pstmt.setString(6, mem.getGender());
-			pstmt.setString(7, mem.getAdminster());
+			pstmt.setString(7, mem.getAdminister());
 	
 
 			pstmt.executeUpdate();

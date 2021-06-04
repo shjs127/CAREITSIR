@@ -55,9 +55,28 @@
 					<div class="col-md-8 col-sm-12">
 					<!-- Top Links Starts -->
 						<ul class="list-unstyled list-inline top-links text-md-right text-weight-bold">
-							<li class="list-inline-item"><a href="#">마이페이지</a></li>
+							<li class="list-inline-item"><a href="${pageContext.request.contextPath }/main/profile.do">마이페이지</a></li>
 							<li class="list-inline-item"><a href="${pageContext.request.contextPath}/join.do">게시판</a></li>
-							<li class="list-inline-item"><a href="${pageContext.request.contextPath }/login.do">로그인</a></li>
+							 <%
+							    
+						        // 현재 로그인된 아이디가 없다면 (= session에 저장된 id가 없다면)
+						        if(session.getAttribute("authUser") == null) {
+						            %>
+								<li class="list-inline-item"><a href="${pageContext.request.contextPath }/login.do" >로그인</a></li>
+						            <%
+						        } 
+						        // 현재 로그인된 아이디가 있다면 (= session에 저장된 id가 있다면)
+						        else {
+						            %>
+						        <li style=”color:white;" class="list-inline-item" >${authUser.name }
+						        <%
+							out.print("님");        
+						        %>
+						        </li>
+						        <li class="list-inline-item"><a href="${pageContext.request.contextPath }/logout.do" >로그아웃</a></li>
+						            <%
+						        }
+						    %>
 						</ul>
 
 
