@@ -6,9 +6,9 @@ import java.util.Map;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import member.service.DuplicateIdException;
-import member.service.JoinRequest;
-import member.service.JoinService;
+import auth.service.DuplicateIdException;
+import auth.service.JoinRequest;
+import auth.service.JoinService;
 import mvc.command.CommandHandler;
 
 public class JoinHandler implements CommandHandler {

@@ -6,13 +6,10 @@ import java.util.Map;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import auth.service.ChangePasswordService;
+import auth.service.InvalidPasswordException;
+import auth.service.MemberNotFoundException;
 import auth.service.User;
-import member.service.ChangePasswordService;
-import member.service.DuplicateIdException;
-import member.service.InvalidPasswordException;
-import member.service.JoinRequest;
-import member.service.JoinService;
-import member.service.MemberNotFoundException;
 import mvc.command.CommandHandler;
 
 public class ProfileHandler implements CommandHandler {

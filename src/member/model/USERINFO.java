@@ -1,28 +1,24 @@
 package member.model;
 
 
-public class Member {
+public class USERINFO {
 
 	private int userNo;
 	private String userId;  // "lee"
 	private String password;
-	private String userName;
+	private String name;
 	private String nickName;
 	private String birth;
 	private String email;
 	private String gender;
 	private String administer;
 
-<<<<<<< HEAD
-	public Member(int userNo, String userId, String password, String name, String nickName, String birth, String email,
-=======
-	public Member(int userNo, String userId, String password, String userName, String nickName, String birth, String email,
->>>>>>> refs/remotes/origin/main
+	public USERINFO(int userNo, String userId, String password, String name, String nickName, String birth, String email,
 			String gender, String administer) {
 		this.userNo = userNo;
 		this.userId = userId;
 		this.password = password;
-		this.userName = userName;
+		this.name = name;
 		this.nickName = nickName;
 		this.birth = birth;
 		this.email = email;
@@ -46,8 +42,8 @@ public class Member {
 		return administer;
 	}
 
-	public String getUserName() {
-		return userName;
+	public String getName() {
+		return name;
 	}
 
 	public String getPassword() {

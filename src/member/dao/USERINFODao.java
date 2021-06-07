@@ -8,11 +8,11 @@ import java.sql.Timestamp;
 import java.util.Date;
 
 import jdbc.JdbcUtil;
-import member.model.Member;
+import member.model.USERINFO;
 
-public class MemberDao {
+public class USERINFODao {
 
-	public Member selectById(Connection conn, String userId) throws SQLException {
+	public USERINFO selectById(Connection conn, String userId) throws SQLException {
 		PreparedStatement pstmt = null;
 		ResultSet rs = null;
 		try {
@@ -20,9 +20,9 @@ public class MemberDao {
 					"select * from USERINFO where USERID = ?");
 			pstmt.setString(1, userId);
 			rs = pstmt.executeQuery();
-			Member member = null;
+			USERINFO userinfo = null;
 			if (rs.next()) {
-				member = new Member(
+				userinfo = new USERINFO(
 						rs.getInt("userNo"),
 						rs.getString("userId"), 
 						rs.getString("password"),
@@ -33,8 +33,7 @@ public class MemberDao {
 						rs.getString("gender"),
 						rs.getString("administer"));
 			}
-			return member;
-			
+			return userinfo;
 		} finally {
 			JdbcUtil.close(rs);
 			JdbcUtil.close(pstmt);
@@ -43,31 +42,36 @@ public class MemberDao {
 
 
 
-	public void insert(Connection conn, Member mem) throws SQLException {
+	public void insert(Connection conn, USERINFO userinfo) throws SQLException {
 		try (PreparedStatement pstmt = 
 				conn.prepareStatement("insert into USERINFO values(USERNUM.NEXTVAL,?,?,?,?,sysdate,?,?,?)")) {
 
-			pstmt.setString(1, mem.getUserId());
-			pstmt.setString(2, mem.getPassword());
-			pstmt.setString(3, mem.getUserName());
-			pstmt.setString(4, mem.getNickName());
+			pstmt.setString(1, userinfo.getUserId());
+			pstmt.setString(2, userinfo.getPassword());
+			pstmt.setString(3, userinfo.getName());
+			pstmt.setString(4, userinfo.getNickName());
 			//pstmt.setString(5, mem.getBirth());
-			pstmt.setString(5, mem.getEmail());
-			pstmt.setString(6, mem.getGender());
-			pstmt.setString(7, mem.getAdminister());
+			pstmt.setString(5, userinfo.getEmail());
+			pstmt.setString(6, userinfo.getGender());
+			pstmt.setString(7, userinfo.getAdminister());
 	
 
 			pstmt.executeUpdate();
 		}
 	}
 
-	public void update(Connection conn, Member member) throws SQLException {
+	public void update(Connection conn, USERINFO userinfo) throws SQLException {
 		try (PreparedStatement pstmt = conn.prepareStatement(
-				"update member set name = ?, password = ? where memberid = ?")) {
-			pstmt.setString(1, member.getUserName());
-			pstmt.setString(2, member.getPassword());
-			pstmt.setString(3, member.getUserId());
+				"update USERINFO set USERNAME = ?, PASSWORD = ? where USERID = ?")) {
+			pstmt.setString(1, userinfo.getName());
+			pstmt.setString(2, userinfo.getPassword());
+			pstmt.setString(3, userinfo.getUserId());
 			pstmt.executeUpdate();
 		}
 	}
 }
+
+
+
+
+

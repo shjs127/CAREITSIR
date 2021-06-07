@@ -6,5 +6,5 @@
 
 <script>
 	alert("성공적으로 회원가입 되었습니다.");
-	location.href="login.do";
+	location.href="${pageContext.request.contextPath }/main/index.do"; 
 </script>

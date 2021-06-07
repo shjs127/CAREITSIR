@@ -1,4 +1,4 @@
-package member.service;
+package auth.service;
 
 import java.util.Map;
 

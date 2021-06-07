@@ -1,4 +1,4 @@
-package member.service;
+package auth.service;
 
 import java.sql.Connection;
 import java.sql.SQLException;
@@ -8,12 +8,12 @@ import javax.xml.crypto.Data;
 
 import jdbc.JdbcUtil;
 import jdbc.connection.ConnectionProvider;
-import member.dao.MemberDao;
-import member.model.Member;
+import member.dao.USERINFODao;
+import member.model.USERINFO;
 
 public class JoinService {
 
-	private MemberDao memberDao = new MemberDao();
+	private USERINFODao userinfoDao = new USERINFODao();
 
 	public void join(JoinRequest joinReq) {
 		Connection conn = null;
@@ -21,13 +21,13 @@ public class JoinService {
 			conn = ConnectionProvider.getConnection();
 			conn.setAutoCommit(false);
 
-			Member member = memberDao.selectById(conn, joinReq.getUserId());
-			if (member != null) {
+			USERINFO userinfo = userinfoDao.selectById(conn, joinReq.getUserId());
+			if (userinfo != null) {
 				JdbcUtil.rollback(conn);
 				throw new DuplicateIdException();
 			}
-			int x=1;
-			memberDao.insert(conn, new Member(
+			
+			userinfoDao.insert(conn, new USERINFO(
 				0,joinReq.getUserId() ,joinReq.getPassword(),joinReq.getName(),joinReq.getNickName(),joinReq.getBirth(),joinReq.getEmail(),joinReq.getGender(),"x"));
 			conn.commit();
 		} catch (SQLException e) {
