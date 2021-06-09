@@ -1,27 +1,14 @@
-package member.model;
+package member.dao;
 
-public class STOREINFO {
-	
+public class StoreRequest {
 	private int storeNo;
 	private String storeName;
 	private String storePic;
 	private String address;
 	private String hours;
-	private String closedDays;
+	private String closeDays;
 	private String callNumber;
 	private String manageNo;
-	
-	public STOREINFO(int storeNo, String storeName, String storePic, String address, String hours, String closedDays,
-			String callNumber, String manageNo) {
-		this.storeNo = storeNo;
-		this.storeName = storeName;
-		this.storePic = storePic;
-		this.address = address;
-		this.hours = hours;
-		this.closedDays = closedDays;
-		this.callNumber = callNumber;
-		this.manageNo = manageNo;
-	}
 	
 	public int getStoreNo() {
 		return storeNo;
@@ -53,11 +40,11 @@ public class STOREINFO {
 	public void setHours(String hours) {
 		this.hours = hours;
 	}
-	public String getClosedDays() {
-		return closedDays;
+	public String getCloseDays() {
+		return closeDays;
 	}
-	public void setClosedDay(String closedDay) {
-		this.closedDays = closedDay;
+	public void setCloseDays(String closeDays) {
+		this.closeDays = closeDays;
 	}
 	public String getCallNumber() {
 		return callNumber;
@@ -71,5 +58,5 @@ public class STOREINFO {
 	public void setManageNo(String manageNo) {
 		this.manageNo = manageNo;
 	}
-
+	
 }
