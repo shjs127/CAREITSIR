@@ -51,8 +51,16 @@ public class STOREINFODao {
 		}
 	}
 
+	public void updateApi(Connection conn, STOREINFO storeinfo) throws SQLException {
+		try (PreparedStatement pstmt = conn.prepareStatement("update storeinfo set storename = ?, address = ?, callnumber = ? where manageno = ?")){
+			pstmt.setString(1, storeinfo.getStoreName());
+			pstmt.setString(2, storeinfo.getAddress());
+			pstmt.setString(3, storeinfo.getCallNumber());
+			pstmt.setString(4, storeinfo.getManageNo());
+		}
+	}
 	
-	public void update(Connection conn, STOREINFO storeinfo) throws SQLException{
+	public void updateInfo(Connection conn, STOREINFO storeinfo) throws SQLException{
 		try(PreparedStatement pstmt = conn.prepareStatement("update storeinfo set storename = ?, storepic = ?, address = ?,"
 				+ "hours = ?, closedays = ?, callnumber = ? ")){
 			pstmt.setString(1, storeinfo.getStoreName());

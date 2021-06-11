@@ -2,6 +2,7 @@ package mvc.controller;
 
 import java.io.FileReader;
 import java.io.IOException;
+import java.sql.SQLException;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
@@ -79,8 +80,9 @@ public class ControllerUsingURI extends HttpServlet {
             viewPage = handler.process(request, response);
             // "/WEB-INF/view/joinForm.jsp"
         } catch (Throwable e) {
+        	e.printStackTrace();
             throw new ServletException(e);
-        }
+        } 
         if (viewPage != null) {
 	        RequestDispatcher dispatcher = request.getRequestDispatcher(viewPage);
 	        dispatcher.forward(request, response);
